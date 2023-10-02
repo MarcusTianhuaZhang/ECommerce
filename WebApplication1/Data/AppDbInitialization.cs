@@ -26,7 +26,7 @@ namespace EStore.Data
                     {
                         new Company()
                         {
-                            CompanyName = "Nvedia",
+                            CompanyName = "NVIDIA",
                             CompanyURL = "https://www.nvidia.com/en-us/",
                             CompanyLogoURL = "https://s3.amazonaws.com/cms.ipressroom.com/219/files/20149/544a0d86f6091d6699000060_NVLogo_2D/NVLogo_2D_362acb00-8e1b-476b-9662-9fe138a4a920-prv.jpg",
                             Description = "NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and the industrial metaverse is transforming the world's largest industries and profoundly impacting society."
