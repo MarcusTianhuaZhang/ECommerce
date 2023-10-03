@@ -4,4 +4,5 @@ https://estore-app.azurewebsites.net/
 
 Admin login credentials:
 Email: admin@estores.com
+
 Password: Login12345!
