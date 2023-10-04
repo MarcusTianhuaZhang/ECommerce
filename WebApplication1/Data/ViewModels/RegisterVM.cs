@@ -16,6 +16,7 @@ namespace EStore.Data.ViewModels
         [Required(ErrorMessage = "Email address is required")]
         public string EmailAddress { get; set; }
 
+        [Display(Name = "Password (Must contain uppercase and lowercase characters, a number, and a non-alphanumeric character.)")]
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }

@@ -14,7 +14,12 @@
                 <img src="@item.ImageURL" style="max-width: 240px;max-height :240px; width : 100%;" >
             </div>
             <div class="description">
-                <h2 class="h2card">@item.ProductName</h2>
+                <h2 class="h2card">@item.ProductName
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <a class="text-black float-right" asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-fill"></i></a>
+                    }
+                </h2>
                 <h4 class="h4card">@item.Company.CompanyName</h4>
                 <h1 class="h1card">@item.Price.ToString("c")</h1>
                 <p class="pcard">Category: @(item.Category.GetDisplayName())</p>

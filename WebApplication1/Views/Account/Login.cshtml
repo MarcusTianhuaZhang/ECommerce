@@ -2,7 +2,7 @@
 @model LoginVM;
 
 @{ 
-    ViewData["Title"] = "Log in to your account";
+    ViewData["Title"] = "Log into your account";
 }
 
 <div class="row">
@@ -14,7 +14,7 @@
         @if(TempData["Error"] != null)
             {
                 <div class="col-md-12 alert alert-danger">
-                    <span><b>Sorry!</b> - @TempData["Error"] </span>
+                    <span><b>Error!</b> - @TempData["Error"] </span>
                 </div>
             }
 
